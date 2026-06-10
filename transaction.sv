@@ -1,0 +1,21 @@
+class transaction extends uvm_sequence_item;
+rand [3:0]a;
+rand [3:0]b;
+rand c;
+rand [4:0]sum;
+
+//factory registration pf all fields
+`uvm_utils_object_begin(transaction)
+
+  `uvm_field_int(a,UVM_DEFAULT)
+  `uvm_field_int(b,UVM_DEFAULT)
+  `uvm_field_int(c,UVM_DEFAULT)
+  `uvm_field_int(sum,UVM_DEFAULT)
+
+`uvm_utils_object_end
+
+function new(string name="packet");
+ super.new(name);
+endfunction
+
+endclass

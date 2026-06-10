@@ -1,0 +1,16 @@
+class monitor extends uvm_monitor
+virtual adder_inf vif;
+bit[4:0]sum;
+ `uvm_component_utils_begin(monitor)
+   `uvm_field_int(sum,UVM_DEFAULT)
+ `uvm_component_utils_end
+
+covergroup cg;
+ a:coverpoint vif.a;
+ b:coverpoint vif.b;
+ c:coverpoint vif.c; 
+cross a,b,c;
+endgroup
+
+
+endclass

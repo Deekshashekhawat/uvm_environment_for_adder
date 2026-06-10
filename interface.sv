@@ -1,0 +1,14 @@
+interface adder_inf(input bit clk);
+
+
+logic [3:0]a;
+logic [3:0]b;
+logic c;
+
+
+logic [4:0]sum;
+
+modport adder_dut(output sum, input a,b,c,clk);
+
+
+endinterface

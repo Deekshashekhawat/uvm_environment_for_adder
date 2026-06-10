@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/questasim64_10.7c/examples
+Yadder_if
+Z0 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+!s110 1781061053
+!i10b 1
+!s100 `mU_PgXli0_OW`Jgjh4zn3
+IYKXcGSBP:PM<mKV7jTA_31
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 !s105 interface_sv_unit
+S1
+Z3 dD:/uvm_environment_for_adder
+w1780977899
+Z4 8D:/uvm_environment_for_adder/interface.sv
+Z5 FD:/uvm_environment_for_adder/interface.sv
+L0 1
+Z6 OL;L;10.7c;67
+r1
+!s85 0
+31
+!s108 1781061053.000000
+!s107 D:/uvm_environment_for_adder/interface.sv|
+Z7 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/uvm_environment_for_adder/interface.sv|
+!i113 0
+Z8 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 tCvgOpt 0
+Yadder_inf
+R0
+!s110 1781062080
+!i10b 1
+!s100 =]c:@X6IoOnmXR>n99ZOh1
+IR4AOIg1[0=jHb_^TZj3lm3
+R1
+R2
+S1
+R3
+w1781062075
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1781062080.000000
+Z10 !s107 D:/uvm_environment_for_adder/interface.sv|
+R7
+!i113 0
+R8
+R9

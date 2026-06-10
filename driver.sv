@@ -1,0 +1,32 @@
+class driver extends uvm_driver#(transaction);
+virtual adder_inf vif;
+transaction pkt;
+
+`uvm_component_utils(driver)
+
+function new(string name,uvm_component parent);
+super.new(name, parent);
+endfunction
+
+function void build_phase(uvm_phase phase);
+if(!uvm_config_db#(virtual adder_inf)::get(this,"","add_vif",vif))
+`uvm_error("Driver","Unable to get virtual interface");
+
+endfunction
+
+task run_phase(uvm_phase phase);
+forever begin
+seq_item_port.get_next_item(pkt);
+drive_item(pkt);
+seq_item_port.item_done();
+end
+endtask
+
+task drive_item(transaction pkt);
+@(posedge vif.clk)
+vif.a<=pkt.a;
+vif.a<=pkt.b;
+vif.a<=pkt.c;
+endtask
+
+endclass
