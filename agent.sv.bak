@@ -1,8 +1,3 @@
-`include "monitor.sv"
-`include "driver.sv"
-`include "sequencer.sv"
-
-
 class agent extends uvm_agent;
 
 bit is_active=1;

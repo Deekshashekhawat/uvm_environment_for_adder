@@ -1,3 +1,4 @@
+`include "transaction.sv"
 class sequence1 extends uvm_sequence#(transaction);
 
 transaction pkt;
@@ -10,11 +11,12 @@ endfunction
 
 task body();
 repeat(1000)begin
-pkt= transcation::type_id::create("pkt");
+pkt= transaction::type_id::create("pkt");
 start_item(pkt);
-assert(pkt.randomize);
+assert(pkt.randomize());
 finish_item(pkt);
 end
+
 endtask
 
 endclass

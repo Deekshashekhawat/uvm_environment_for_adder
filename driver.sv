@@ -1,3 +1,4 @@
+`include "transaction.sv"
 class driver extends uvm_driver#(transaction);
 virtual adder_inf vif;
 transaction pkt;

@@ -1,9 +1,17 @@
-class monitor extends uvm_monitor
+
+`include "transaction.sv"
+class monitor extends uvm_monitor;
+
 virtual adder_inf vif;
 bit[4:0]sum;
- `uvm_component_utils_begin(monitor)
-   `uvm_field_int(sum,UVM_DEFAULT)
- `uvm_component_utils_end
+
+
+uvm_analysis_port #(transaction) item_collect_port;
+transaction pkt;
+
+
+ `uvm_component_utils(monitor)
+
 
 covergroup cg;
  a:coverpoint vif.a;
@@ -11,6 +19,34 @@ covergroup cg;
  c:coverpoint vif.c; 
 cross a,b,c;
 endgroup
+
+function new(string name,uvm_component parent);
+super.new(name,parent);
+item_collect_port = new("item_collect_port", this);
+pkt=new;
+endfunction
+
+function void build_phase(uvm_phase phase);
+if(!uvm_config_db#(virtual adder_inf)::get(this,"","add_vif",vif))
+`uvm_error("monitor","unable to get virtual interface")
+super.build_phase(phase);
+cg=new;
+endfunction
+
+task run_phase(uvm_phase phase);
+forever begin
+      @(posedge vif.clk);
+      pkt.a = vif.a;
+      pkt.b = vif.b;
+      pkt.c = vif.c;
+      cg.sample();
+      `uvm_info(get_type_name(),$sformatf("a=%0d b=%0d c=%0d",pkt.a,pkt.b,pkt.c),UVM_HIGH)
+      @(posedge vif.clk);
+      pkt.sum = vif.sum;
+      item_collect_port.write(pkt);
+
+end
+endtask
 
 
 endclass

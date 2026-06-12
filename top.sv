@@ -1,7 +1,7 @@
 module top();
 
 `include "uvm_macros.svh"
-`include "myfiles"
+`include "myfiles.sv"
 import uvm_pkg::*;
 
 bit clk;
@@ -11,7 +11,7 @@ adder_dut u0(i0);
 
 initial begin 
 
-uvm_config_db #( virtual adder_inf)::set(null,"*",adder_vif,i0);
+uvm_config_db #( virtual adder_inf)::set(null,"*","adder_vif",i0);
 
 run_test();
 
