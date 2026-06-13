@@ -1,11 +1,11 @@
-`include "transaction.sv"
+
 class driver extends uvm_driver#(transaction);
 virtual adder_inf vif;
 transaction pkt;
 
 `uvm_component_utils(driver)
 
-function new(string name,uvm_component parent);
+function new(string name="driver",uvm_component parent=null);
 super.new(name, parent);
 endfunction
 

@@ -1,22 +1,20 @@
+`include "uvm_macros.svh"
+
 module top();
 
-`include "uvm_macros.svh"
-`include "myfiles.sv"
-import uvm_pkg::*;
+  import uvm_pkg::*;
+  import myfiles::*;
 
-bit clk;
+  bit clk;
 
-adder_inf i0(clk);
-adder_dut u0(i0);
+  adder_inf i0(clk);
+  adder u0(i0);
 
-initial begin 
+  initial begin
+    uvm_config_db#(virtual adder_inf)::set(null,"*","adder_vif",i0);
+    run_test("test");
+  end
 
-uvm_config_db #( virtual adder_inf)::set(null,"*","adder_vif",i0);
-
-run_test();
-
-end
-
-always #5 clk=~clk;
+  always #5 clk = ~clk;
 
 endmodule

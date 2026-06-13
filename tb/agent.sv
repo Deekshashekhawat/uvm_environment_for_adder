@@ -1,6 +1,4 @@
-`include "monitor.sv"
-`include "driver.sv"
-`include "sequencer.sv"
+
 
 
 class agent extends uvm_agent;
@@ -12,7 +10,7 @@ monitor mon;
 driver drv;
 sequencer seqr;
 
-function new(string name ="agent",uvm_component parent );
+function new(string name ="agent",uvm_component parent=null );
 super.new(name,parent);
 endfunction
 

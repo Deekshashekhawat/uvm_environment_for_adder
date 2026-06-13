@@ -1,4 +1,4 @@
-`include "transaction.sv"
+
 class sequence1 extends uvm_sequence#(transaction);
 
 transaction pkt;
