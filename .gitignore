@@ -1,0 +1,18 @@
+# Backup files
+*.bak
+
+# Questa/ModelSim
+work/
+transcript
+*.wlf
+
+# Project files
+*.mpf
+*.cr.mti
+
+# Waveforms
+*.vcd
+*.vpd
+
+# VS Code
+.vscode/
