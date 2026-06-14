@@ -18,13 +18,14 @@ This project implements a UVM-based verification environment for a synchronous 4
 
 ## Features
 
+## Features
+
 - Constrained-random stimulus generation
-- Driver–Sequencer communication
-- Monitor-based transaction collection
-- Scoreboard result checking
-- Functional coverage with cross coverage
-- UVM reporting and factory registration
+- UVM factory registration and object/component creation
+- TLM-based communication between monitor-scoreboard and  Driver–Sequencer
 - Virtual interface configuration using `uvm_config_db`
+- Automated scoreboard-based checking
+- UVM reporting (`uvm_info`, `uvm_error`, `uvm_fatal`)
 
 ## DUT Functionality
 
