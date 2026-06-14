@@ -33,20 +33,9 @@ sum <= a + b + c;
 ```
 
 ## Testbench Architecture
-<img width="475" height="507" alt="image" src="https://github.com/user-attachments/assets/d1c3a177-0ee6-4683-95c8-1a2377b4a251" />
+<img width="430" height="466" alt="image" src="https://github.com/user-attachments/assets/b1143fe7-a7e0-4d79-b1f4-2eb30042f9d1" />
 
 
-```text
-Test
- └── Env
-      └── Agent
-           ├── Sequencer
-           ├── Driver
-           └── Monitor
-                    │
-                    ▼
-              Scoreboard
-```
 
 ## Directory Structure
 
