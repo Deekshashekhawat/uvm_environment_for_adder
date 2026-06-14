@@ -58,6 +58,7 @@ uvm_environment_for_adder
 │   ├── myfiles.sv
 │   └── top.sv
 └── README.md
+└── .gitignore
 ```
 ## Simulation Results
 
