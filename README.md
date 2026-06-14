@@ -59,6 +59,18 @@ uvm_environment_for_adder
 │   └── top.sv
 └── README.md
 ```
+## Simulation Results
+
+### Simulation
+
+<img width="1265" height="610" alt="image" src="https://github.com/user-attachments/assets/b98911c1-385b-4707-abce-21540ecb89fb" />
+
+
+### transcript
+<img width="1400" height="1005" alt="image" src="https://github.com/user-attachments/assets/0ca61833-dcbd-4d10-ad89-c5affbdf39a1" />
+
+<img width="1024" height="734" alt="image" src="https://github.com/user-attachments/assets/5c5af3fd-ebb9-49c1-b550-510d16b2b7f9" />
+used Ai to highlight the words "Matched"
 
 ## Tools
 
