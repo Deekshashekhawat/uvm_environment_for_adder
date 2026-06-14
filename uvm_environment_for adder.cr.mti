@@ -1,33 +1,22 @@
-D:/uvm_environment_for_adder/tb/agent.sv {0 {vlog -work work -vopt -sv -stats=none D:/uvm_environment_for_adder/tb/agent.sv
+D:/uvm_environment_for_adder/interface.sv {1 {vlog -work work -vopt -sv -stats=none D:/uvm_environment_for_adder/interface.sv
 QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
-** Error: (vlog-13069) D:/uvm_environment_for_adder/tb/agent.sv(4): near "uvm_agent": syntax error, unexpected IDENTIFIER.
-** Error: D:/uvm_environment_for_adder/tb/agent.sv(4): Error in class extension specification.
-
-} {3.0 5.0} {}} D:/uvm_environment_for_adder/tb/monitor.sv {0 {vlog -work work -vopt -sv -stats=none D:/uvm_environment_for_adder/tb/monitor.sv
-QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
-** Error: (vlog-13069) D:/uvm_environment_for_adder/tb/monitor.sv(3): near "uvm_monitor": syntax error, unexpected IDENTIFIER.
-** Error: D:/uvm_environment_for_adder/tb/monitor.sv(3): Error in class extension specification.
-
-} {3.0 5.0} {}} D:/uvm_environment_for_adder/tb/sequence.sv {0 {vlog -work work -vopt -sv -stats=none D:/uvm_environment_for_adder/tb/sequence.sv
-QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
-** Error: (vlog-13069) D:/uvm_environment_for_adder/tb/sequence.sv(2): near "uvm_sequence": syntax error, unexpected IDENTIFIER.
-** Error: D:/uvm_environment_for_adder/tb/sequence.sv(2): Error in class extension specification.
-
-} {3.0 5.0} {}} D:/uvm_environment_for_adder/tb/env.sv {0 {vlog -work work -vopt -sv -stats=none D:/uvm_environment_for_adder/tb/env.sv
-QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
-** Error: (vlog-13069) D:/uvm_environment_for_adder/tb/env.sv(2): near "uvm_env": syntax error, unexpected IDENTIFIER.
-** Error: D:/uvm_environment_for_adder/tb/env.sv(2): Error in class extension specification.
-
-} {3.0 5.0} {}} D:/uvm_environment_for_adder/tb/adde_DUT.sv {1 {vlog -work work -vopt -sv -stats=none D:/uvm_environment_for_adder/tb/adde_DUT.sv
-QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
--- Compiling module adder
+-- Compiling interface adder_inf
 
 Top level modules:
-	adder
+	--none--
 
-} {} {}} D:/uvm_environment_for_adder/tb/top.sv {1 {vlog -work work -vopt -sv -stats=none D:/uvm_environment_for_adder/tb/top.sv
+} {} {}} D:/uvm_environment_for_adder/myfiles.sv {1 {vlog -work work -vopt -sv -stats=none D:/uvm_environment_for_adder/myfiles.sv
 QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
-** Note: (vlog-2286) D:/uvm_environment_for_adder/tb/top.sv(1): Using implicit +incdir+C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package myfiles
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Note: (vlog-2286) D:/uvm_environment_for_adder/myfiles.sv(4): Using implicit +incdir+C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} D:/uvm_environment_for_adder/top.sv {1 {vlog -work work -vopt -sv -stats=none D:/uvm_environment_for_adder/top.sv
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+** Note: (vlog-2286) D:/uvm_environment_for_adder/top.sv(1): Using implicit +incdir+C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
 -- Compiling module top
 -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
 -- Importing package myfiles
@@ -35,45 +24,4 @@ QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
 Top level modules:
 	top
 
-} {} {}} D:/uvm_environment_for_adder/tb/scoreboard.sv {0 {vlog -work work -vopt -sv -stats=none D:/uvm_environment_for_adder/tb/scoreboard.sv
-QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
-** Error: (vlog-13069) D:/uvm_environment_for_adder/tb/scoreboard.sv(2): near "uvm_scoreboard": syntax error, unexpected IDENTIFIER.
-** Error: D:/uvm_environment_for_adder/tb/scoreboard.sv(2): Error in class extension specification.
-
-} {3.0 5.0} {}} D:/uvm_environment_for_adder/tb/transaction.sv {0 {vlog -work work -vopt -sv -stats=none D:/uvm_environment_for_adder/tb/transaction.sv
-QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
-** Error: (vlog-13069) D:/uvm_environment_for_adder/tb/transaction.sv(3): near "uvm_sequence_item": syntax error, unexpected IDENTIFIER.
-** Error: D:/uvm_environment_for_adder/tb/transaction.sv(3): Error in class extension specification.
-
-} {3.0 5.0} {}} D:/uvm_environment_for_adder/tb/test.sv {0 {vlog -work work -vopt -sv -stats=none D:/uvm_environment_for_adder/tb/test.sv
-QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
-** Error: (vlog-13069) D:/uvm_environment_for_adder/tb/test.sv(4): near "uvm_test": syntax error, unexpected IDENTIFIER.
-** Error: D:/uvm_environment_for_adder/tb/test.sv(4): Error in class extension specification.
-
-} {3.0 5.0} {}} D:/uvm_environment_for_adder/tb/myfiles.sv {1 {vlog -work work -vopt -sv -stats=none D:/uvm_environment_for_adder/tb/myfiles.sv
-QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
--- Compiling package myfiles
--- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
-** Note: (vlog-2286) D:/uvm_environment_for_adder/tb/myfiles.sv(4): Using implicit +incdir+C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
-
-Top level modules:
-	--none--
-
-} {} {}} D:/uvm_environment_for_adder/tb/interface.sv {1 {vlog -work work -vopt -sv -stats=none D:/uvm_environment_for_adder/tb/interface.sv
-QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
--- Compiling interface adder_inf
-
-Top level modules:
-	--none--
-
-} {} {}} D:/uvm_environment_for_adder/tb/sequencer.sv {0 {vlog -work work -vopt -sv -stats=none D:/uvm_environment_for_adder/tb/sequencer.sv
-QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
-** Error: (vlog-13069) D:/uvm_environment_for_adder/tb/sequencer.sv(2): near "uvm_sequencer": syntax error, unexpected IDENTIFIER.
-** Error: D:/uvm_environment_for_adder/tb/sequencer.sv(2): Error in class extension specification.
-
-} {3.0 5.0} {}} D:/uvm_environment_for_adder/tb/driver.sv {0 {vlog -work work -vopt -sv -stats=none D:/uvm_environment_for_adder/tb/driver.sv
-QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
-** Error: (vlog-13069) D:/uvm_environment_for_adder/tb/driver.sv(2): near "uvm_driver": syntax error, unexpected IDENTIFIER.
-** Error: D:/uvm_environment_for_adder/tb/driver.sv(2): Error in class extension specification.
-
-} {3.0 5.0} {}}
+} {} {}}
