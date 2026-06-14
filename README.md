@@ -33,7 +33,8 @@ sum <= a + b + c;
 ```
 
 ## Testbench Architecture
-<img width="430" height="466" alt="image" src="https://github.com/user-attachments/assets/b1143fe7-a7e0-4d79-b1f4-2eb30042f9d1" />
+<img width="945" height="1024" alt="image" src="https://github.com/user-attachments/assets/7a3d46a8-e50c-4365-9979-0bc88c989bd6" />
+
 
 
 
@@ -42,7 +43,8 @@ sum <= a + b + c;
 ```text
 uvm_environment_for_adder
 ├── rtl/
-│   └── adder.sv
+│   ├── adder.sv
+│   └── top.sv
 ├── tb/
 │   ├── transaction.sv
 │   ├── sequence.sv
